@@ -10,9 +10,9 @@ namespace Feedback.Core.Repositories
         where T : IModel
     {
         IList<T> All();
-        T Find(int id);
+        T Find(long id);
         T Create(T model);
         bool Update(T model);
-        bool Delete(int id);
+        bool Delete(long id);
     }
 }

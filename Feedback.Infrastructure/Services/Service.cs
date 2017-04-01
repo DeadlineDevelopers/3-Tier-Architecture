@@ -19,12 +19,12 @@ namespace Feedback.Infrastructure.Services
             throw new NotImplementedException();
         }
 
-        public bool Delete(int id)
+        public bool Delete(long id)
         {
             throw new NotImplementedException();
         }
 
-        public T Find(int id)
+        public T Find(long id)
         {
             throw new NotImplementedException();
         }

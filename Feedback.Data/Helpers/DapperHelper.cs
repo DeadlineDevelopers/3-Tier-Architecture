@@ -20,7 +20,7 @@ namespace Feedback.Data.Helpers
         public void SetConnection(string name)
         {
             _connectionName = name;
-            _connectionString = @"Server=.;Database=TestDB;Trusted_Connection=true;";
+            _connectionString = @"Server=.;Database=FEEDBACK;Trusted_Connection=true;";
         }
 
         public void SetConnectionString(string connectionString)

@@ -36,10 +36,10 @@ namespace Feedback.Controllers
         public void Post([FromBody]UserModel model)
         {
             //UserModel model = new UserModel();
-            model.CreatedAt = DateTime.Now;
-            model.CreatedBy = 1;
-            model.UpdatedAt = DateTime.Now;
-            model.UpdatedBy = 1;
+            //model.CreatedAt = DateTime.Now;
+            //model.CreatedBy = 1;
+            //model.UpdatedAt = DateTime.Now;
+            //model.UpdatedBy = 1;
 
             _usersService.Create(model);
         }

@@ -27,12 +27,12 @@ namespace Feedback.Infrastructure.Services
             return _repository.Create(model);
         }
 
-        public bool Delete(int id)
+        public bool Delete(long id)
         {
             throw new NotImplementedException();
         }
 
-        public UserModel Find(int id)
+        public UserModel Find(long id)
         {
             return _repository.Find(id);
         }

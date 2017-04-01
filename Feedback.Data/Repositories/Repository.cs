@@ -32,14 +32,14 @@ namespace Feedback.Data.Repositories
         {
             using (var sqlConnection = _dbHelper.OpenConnection())
             {
-                model.CreatedAt = model.UpdatedAt = DateTime.Now;
+                //model.CreatedAt = model.UpdatedAt = DateTime.Now;
                 var id = sqlConnection.Insert(model);
                 var result = Find((int)id);
                 return result;
             }
         }
 
-        public bool Delete(int id)
+        public bool Delete(long id)
         {
             using (var sqlConnection = _dbHelper.OpenConnection())
             {
@@ -49,7 +49,7 @@ namespace Feedback.Data.Repositories
             }
         }
 
-        public M Find(int id)
+        public M Find(long id)
         {
             using (var sqlConnection = _dbHelper.OpenConnection())
             {
@@ -62,7 +62,7 @@ namespace Feedback.Data.Repositories
         {
             using (var sqlConnection = _dbHelper.OpenConnection())
             {
-                model.UpdatedAt = DateTime.Now;
+                //model.UpdatedAt = DateTime.Now;
                 var result = sqlConnection.Update(model);
                 return result;
             }

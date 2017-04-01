@@ -37,8 +37,30 @@ namespace Feedback
             services.AddMvc();
 
             services.AddSingleton<IDatabaseHelper, DapperHelper>();
+            //Users
             services.AddTransient<IUsersRepository, UsersRepository>();
             services.AddTransient<IUsersService, UsersService>();
+            //Companies
+            services.AddTransient<ICompaniesRepository, CompaniesRepository>();
+            services.AddTransient<ICompaniesService, CompaniesService>();
+            //Entites
+            services.AddTransient<IEntitiesRepository, EntitiesRepository>();
+            services.AddTransient<IEntitiesService, EntitiesService>();
+            //Surveys
+            services.AddTransient<ISurveysRepository, SurveysRepository>();
+            services.AddTransient<ISurveysService, SurveysService>();
+            //NFCTags
+            services.AddTransient<INFCTagsRepository, NFCTagsRepository>();
+            services.AddTransient<INFCTagsService, NFCTagsService>();
+            //SurveyQuestions
+            services.AddTransient<ISurveyQuestionsRepository, SurveyQuestionsRepository>();
+            services.AddTransient<ISurveyQuestionsService, SurveyQuestionsService>();
+            //SurveyChoices
+            services.AddTransient<ISurveyChoicesRepository, SurveyChoicesRepository>();
+            services.AddTransient<ISurveyChoicesService, SurveyChoicesService>();
+            //SurveyAnswers
+            services.AddTransient<ISurveyAnswersRepository, SurveyAnswersRepository>();
+            services.AddTransient<ISurveyAnswersService, SurveyAnswersService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -7,10 +7,10 @@ namespace Feedback.Core.Models
 {
     public interface IModel
     {
-        int Id { get; set; }
-        DateTime? CreatedAt { get; set; }
-        DateTime? UpdatedAt { get; set; }
-        int CreatedBy { get; set; }
-        int UpdatedBy { get; set; }
+        long Id { get; set; }
+        //DateTime? CreatedAt { get; set; }
+        //DateTime? UpdatedAt { get; set; }
+        //int CreatedBy { get; set; }
+        //int UpdatedBy { get; set; }
     }
 }

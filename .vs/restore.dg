@@ -1,0 +1,14 @@
+#:C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Feedback.Core.xproj
+#:C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Data\Feedback.Data.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Data\Feedback.Data.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Feedback.Core.xproj
+#:C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Infrastructure\Feedback.Infrastructure.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Infrastructure\Feedback.Infrastructure.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Feedback.Core.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Infrastructure\Feedback.Infrastructure.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Data\Feedback.Data.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Data\Feedback.Data.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Feedback.Core.xproj
+#:C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\src\Feedback\Feedback.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\src\Feedback\Feedback.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Feedback.Core.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\src\Feedback\Feedback.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Data\Feedback.Data.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\src\Feedback\Feedback.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Infrastructure\Feedback.Infrastructure.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Data\Feedback.Data.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Feedback.Core.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Infrastructure\Feedback.Infrastructure.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Feedback.Core.xproj
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Infrastructure\Feedback.Infrastructure.xproj|C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Data\Feedback.Data.xproj
