@@ -71,6 +71,7 @@
 --reference:C:\Users\Yunus Emre\.nuget\packages\System.Xml.XmlDocument\4.0.1\ref\netstandard1.3\System.Xml.XmlDocument.dll
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Helpers\IDatabaseHelper.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Models\BaseModel.cs
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Models\BranchModel.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Models\CompanyModel.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Models\EntityModel.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Models\IModel.cs
@@ -81,6 +82,7 @@ C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Models\Survey
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Models\SurveyQuestionModel.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Models\UserModel.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Properties\AssemblyInfo.cs
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Repositories\IBranchesRepository.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Repositories\ICompaniesRepository.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Repositories\IEntitiesRepository.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Repositories\INFCTagsRepository.cs
@@ -90,6 +92,7 @@ C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Repositories\
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Repositories\ISurveyQuestionsRepository.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Repositories\ISurveysRepository.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Repositories\IUsersRepository.cs
+C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Services\IBranchesService.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Services\ICompaniesService.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Services\IEntitiesService.cs
 C:\Users\Yunus Emre\Source\Repos\3-Tier-Architecture\Feedback.Core\Services\INFCTagsService.cs

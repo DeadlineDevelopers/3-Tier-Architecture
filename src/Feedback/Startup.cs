@@ -46,6 +46,9 @@ namespace Feedback
             //Entites
             services.AddTransient<IEntitiesRepository, EntitiesRepository>();
             services.AddTransient<IEntitiesService, EntitiesService>();
+            //Branches
+            services.AddTransient<IBranchesRepository, BranchesRepository>();
+            services.AddTransient<IBranchesService, BranchesService>();
             //Surveys
             services.AddTransient<ISurveysRepository, SurveysRepository>();
             services.AddTransient<ISurveysService, SurveysService>();

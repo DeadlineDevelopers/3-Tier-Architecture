@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Dapper.Contrib.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Feedback.Core.Models
 {
+    [Table("SURVEYQUESTION")]
     public class SurveyQuestionModel : BaseModel
     {
         public long SurveyId { get; set; }

@@ -1,33 +1,28 @@
-﻿using Feedback.Core.Repositories;
-using Feedback.Core.Services;
+﻿using Feedback.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Feedback.Core.Models;
+using Feedback.Core.Repositories;
 
 namespace Feedback.Infrastructure.Services
 {
-    public class EntitiesService : IEntitiesService
+    public class BranchesService : IBranchesService
     {
-        private IEntitiesRepository _repository;
+        private IBranchesRepository _repository;
 
-        public EntitiesService(IEntitiesRepository repository)
+        public BranchesService(IBranchesRepository repository)
         {
             _repository = repository;
         }
 
-        public IList<EntityModel> All()
+        public IList<BranchModel> All()
         {
             return _repository.All();
         }
 
-        public IList<EntityModel> All(long companyId)
-        {
-            return _repository.All(companyId);
-        }
-
-        public EntityModel Create(EntityModel model)
+        public BranchModel Create(BranchModel model)
         {
             return _repository.Create(model);
         }
@@ -37,12 +32,12 @@ namespace Feedback.Infrastructure.Services
             return _repository.Delete(id);
         }
 
-        public EntityModel Find(long id)
+        public BranchModel Find(long id)
         {
             return _repository.Find(id);
         }
 
-        public bool Update(EntityModel model)
+        public bool Update(BranchModel model)
         {
             return _repository.Update(model);
         }

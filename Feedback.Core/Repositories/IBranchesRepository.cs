@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Feedback.Core.Repositories
 {
-    public interface IEntitiesRepository : IRepository<EntityModel>
+    public interface IBranchesRepository : IRepository<BranchModel>
     {
-        IList<EntityModel> All(long companyId);
     }
 }

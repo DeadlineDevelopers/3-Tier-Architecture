@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Feedback.Core.Services
 {
-    public interface IEntitiesService : IService<EntityModel>
+    public interface IBranchesService : IService<BranchModel>
     {
-        IList<EntityModel> All(long companyId);
     }
 }
