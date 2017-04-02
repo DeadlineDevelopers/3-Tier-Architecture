@@ -22,6 +22,11 @@ namespace Feedback.Infrastructure.Services
             return _repository.All();
         }
 
+        public IList<BranchModel> All(long entityId)
+        {
+            return _repository.All(entityId);
+        }
+
         public BranchModel Create(BranchModel model)
         {
             return _repository.Create(model);

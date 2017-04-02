@@ -8,5 +8,8 @@ namespace Feedback.Core.Services
 {
     public interface ISurveysService : IService<SurveyModel>
     {
+        IList<SurveyModel> All(long entityId);
+
+        IList<SurveyModel> All(long entityId, long branchId);
     }
 }

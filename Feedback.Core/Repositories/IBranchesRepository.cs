@@ -8,5 +8,6 @@ namespace Feedback.Core.Repositories
 {
     public interface IBranchesRepository : IRepository<BranchModel>
     {
+        IList<BranchModel> All(long entityId);
     }
 }

@@ -8,5 +8,6 @@ namespace Feedback.Core.Repositories
 {
     public interface ISurveyQuestionsRepository : IRepository<SurveyQuestionModel>
     {
+        IList<SurveyQuestionModel> All(long surveyId);
     }
 }

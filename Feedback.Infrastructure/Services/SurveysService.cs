@@ -22,6 +22,16 @@ namespace Feedback.Infrastructure.Services
             return _repository.All();
         }
 
+        public IList<SurveyModel> All(long entityId)
+        {
+            return _repository.All(entityId);
+        }
+
+        public IList<SurveyModel> All(long entityId, long branchId)
+        {
+            return _repository.All(entityId, branchId);
+        }
+
         public SurveyModel Create(SurveyModel model)
         {
             return _repository.Create(model);

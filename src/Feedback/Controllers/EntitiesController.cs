@@ -21,20 +21,23 @@ namespace Feedback.Controllers
         }
         // GET: api/values
         [HttpGet]
-        public IEnumerable<EntityModel> Get()
+        public IEnumerable<EntityModel> All([FromQuery]long? companyId, [FromQuery] int? activePassiveId)
         {
+            if (companyId != null)
+            {
+                if (activePassiveId != null)
+                    return _entitiesService.All(Convert.ToInt64(companyId)).Where(e => e.ActivePassiveId == activePassiveId);
+                return _entitiesService.All(Convert.ToInt64(companyId));
+            }
+            else if (activePassiveId != null)
+            {
+                return _entitiesService.All().Where(c => c.ActivePassiveId == Convert.ToInt32(activePassiveId));
+            }
             return _entitiesService.All();
         }
 
-        [HttpGet]
-        [Route("GetByCompanyId/{companyId}")]
-        public IEnumerable<EntityModel> GetByCompanyId(long companyId)
-        {
-            return _entitiesService.All(companyId);
-        }
-
         // GET api/values/5
-        [HttpGet("{id}",Name ="GetEntity")]
+        [HttpGet("{id}", Name = "GetEntity")]
         public IActionResult Get(long id)
         {
             var entity = _entitiesService.Find(id);

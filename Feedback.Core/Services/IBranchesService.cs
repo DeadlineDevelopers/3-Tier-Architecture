@@ -8,5 +8,6 @@ namespace Feedback.Core.Services
 {
     public interface IBranchesService : IService<BranchModel>
     {
+        IList<BranchModel> All(long entityId);
     }
 }

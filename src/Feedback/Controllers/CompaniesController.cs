@@ -14,20 +14,24 @@ namespace Feedback.Controllers
     public class CompaniesController : Controller
     {
         private ICompaniesService _companiesService;
+        private IEntitiesService _entitiesService;
 
-        public CompaniesController(ICompaniesService companiesService)
+        public CompaniesController(ICompaniesService companiesService, IEntitiesService entitiesService )
         {
             _companiesService = companiesService;
+            _entitiesService = entitiesService;
         }
         // GET: api/values
         [HttpGet]
-        public IEnumerable<CompanyModel> Get()
+        public IEnumerable<CompanyModel> Get([FromQuery] int? activePassiveId)
         {
+            if (activePassiveId != null)
+                return _companiesService.All().Where(c => c.ActivePassiveId == activePassiveId);
             return _companiesService.All();
         }
 
         // GET api/values/5
-        [HttpGet("{id}",Name ="GetCustomer")]
+        [HttpGet("{id}", Name = "GetCustomer")]
         public IActionResult Get(long id)
         {
             var company = _companiesService.Find(id);
@@ -101,5 +105,14 @@ namespace Feedback.Controllers
             _companiesService.Delete(id);
             return new NoContentResult();
         }
+
+        //Handling Relations
+        // GET: api/values/5/entities
+        //[HttpGet]
+        //[Route("{companyId}/entities")]
+        //public IEnumerable<EntityModel> All(long companyId)
+        //{
+        //    return _entitiesService.All(companyId);
+        //}
     }
 }

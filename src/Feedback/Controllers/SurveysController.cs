@@ -21,13 +21,36 @@ namespace Feedback.Controllers
         }
         // GET: api/values
         [HttpGet]
-        public IEnumerable<SurveyModel> Get()
+        public IEnumerable<SurveyModel> All([FromQuery]long? entityId, [FromQuery]long? branchId, [FromQuery] int? activePassiveId)
         {
+            if (entityId != null)
+            {
+                if (branchId != null)
+                {
+                    if (activePassiveId != null)
+                        return _surveysService.All(Convert.ToInt64(entityId), Convert.ToInt64(branchId)).Where(s => s.ActivePassiveId == activePassiveId);
+                    return _surveysService.All(Convert.ToInt64(entityId), Convert.ToInt64(branchId));
+                }
+                else
+                {
+                    if (activePassiveId != null)
+                        return _surveysService.All(Convert.ToInt64(entityId)).Where(s => s.ActivePassiveId == activePassiveId);
+                    return _surveysService.All(Convert.ToInt64(entityId));
+                }
+            }
+            else if (branchId != null)
+            {
+                //
+            }
+            else if (activePassiveId != null)
+            {
+                return _surveysService.All().Where(s => s.ActivePassiveId == Convert.ToInt32(activePassiveId));
+            }
             return _surveysService.All();
         }
 
         // GET api/values/5
-        [HttpGet("{id}",Name ="GetSurvey")]
+        [HttpGet("{id}", Name = "GetSurvey")]
         public IActionResult Get(long id)
         {
             var survey = _surveysService.Find(id);

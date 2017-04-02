@@ -21,8 +21,18 @@ namespace Feedback.Controllers
         }
         // GET: api/values
         [HttpGet]
-        public IEnumerable<BranchModel> Get()
+        public IEnumerable<BranchModel> All([FromQuery]long? entityId, [FromQuery] int? activePassiveId)
         {
+            if (entityId != null)
+            {
+                if (activePassiveId != null)
+                    return _branchesService.All(Convert.ToInt64(entityId)).Where(e => e.ActivePassiveId == activePassiveId);
+                return _branchesService.All(Convert.ToInt64(entityId));
+            }
+            else if (activePassiveId != null)
+            {
+                return _branchesService.All().Where(c => c.ActivePassiveId == Convert.ToInt32(activePassiveId));
+            }
             return _branchesService.All();
         }
 
